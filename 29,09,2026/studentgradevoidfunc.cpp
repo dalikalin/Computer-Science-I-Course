@@ -38,3 +38,37 @@ int main () {
     }
     return 0;
 }
+
+// OR we can write like this
+
+#include <iostream>
+using namespace std;
+
+void displayGrade(double score) {
+    if (score >= 90) {
+        cout << "Your grade is A";
+    }
+    else if (score >= 80) {
+        cout << "Your grade is B";
+    }
+    else if (score >= 70) {
+        cout << "Your grade is C";
+    }
+    else if (score >= 60) {
+        cout << "Your grade is D";
+    }
+    else {
+        cout << "Your grade is F";
+    }
+}
+
+int main() {
+    double score;
+
+    cout << "Enter the score: ";
+    cin >> score;
+
+    displayGrade(score);
+
+    return 0;
+}
