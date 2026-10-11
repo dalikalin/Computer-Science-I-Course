@@ -5,12 +5,18 @@ class Employee {
     public:
         string membername;
         double monthlysalary;
-        double annual () {
+        double annual(double i) {
             return monthlysalary * 12;
         }
 };
 int main () {
     Employee e1;
-    
+    cout <<"Enter your name: ";
+    cin >> e1.membername;
+    cout <<"Enter your monthly salary: $";
+    cin >> e1.monthlysalary;
+
+    cout << "Name: " << e1.membername << endl 
+        << "Annual Salary: $" <<e1.annual(e1.monthlysalary);
     return 0;
 }
