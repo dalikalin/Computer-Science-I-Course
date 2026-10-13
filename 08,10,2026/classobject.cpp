@@ -18,6 +18,10 @@ int main () {
     s2.ID = 2025631;
     s2.age = 20;
 
+    cout << "Name: " << s1.name << endl
+         << "ID: " << s1.ID << '\n'
+         << "Age: " << s1.age << '\n';
+
     cout << "Name: " << s2.name << endl
          << "ID: " << s2.ID << '\n'
          << "Age: " << s2.age << '\n';
