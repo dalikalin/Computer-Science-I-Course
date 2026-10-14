@@ -16,6 +16,8 @@ int main () {
     // increase an element
     num[0] = num[1] + num[2];
     cout << num[0] << endl;
+    num[0] = num[1] + 5;
+    cout << num[0] <<endl;
 
     // use loop to display all elements
     for (int i = 0; i<=4; i++) {
