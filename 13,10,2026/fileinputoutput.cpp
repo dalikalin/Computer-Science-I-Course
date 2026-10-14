@@ -19,5 +19,6 @@ int main() {
     cout << "My GPA is " << gpa << "." << endl;
 
     input.close();
+    
     return 0;
 }
