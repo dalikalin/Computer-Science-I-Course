@@ -6,9 +6,6 @@
 // 4. Open student.txt again for reading.
 // 5. Display the information stored in the file.
 // 6. Close the file after reading.
-// 7. Display an error message if the file cannot be opened.
-
-
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -34,11 +31,6 @@ int main() {
     // Step 2: Write information to the file
     ofstream infile("student.txt");
 
-    if (!infile) {
-        cout << "Error opening file!" << endl;
-        return 1;
-    }
-
     infile << name << endl;
     infile << age << endl;
     infile << sub << endl;
@@ -47,11 +39,6 @@ int main() {
 
     // Step 3: Read information from the file
     ifstream outfile("student.txt");
-
-    if (!outfile) {
-        cout << "Error reading file!" << endl;
-        return 1;
-    }
 
     getline(outfile, name);
     outfile >> age;
