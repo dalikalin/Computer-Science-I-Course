@@ -10,7 +10,6 @@
 // 6. Open the file for reading.
 // 7. Read every saved expense and its amount.
 // 8. Display each expense and calculate the total of all recorded expenses.
-// 9. Display an error message if the file cannot be opened.
 #include <iostream>
 #include <fstream>
 #include <iomanip>
@@ -21,8 +20,9 @@ int main () {
     string expensename;
     double amount;
     double total = 0;
+    cout << fixed << setprecision(2);
 
-    cout << "How many expenses do you want to record?";
+    cout << "How many expenses do you want to record? ";
     cin >> numofexpense;
 
     ofstream infile("expenses.txt", ios::app); //append mode is a file-opening and data-handling setting that adds new data to the end of an existing file or dataset without deleting or overwriting its current contents.
@@ -37,10 +37,15 @@ int main () {
     infile.close();
 
     ifstream outfile("expenses.txt");
-    outfile >> expensename;
-    outfile >> expensename;
-    outfile >> expensename;
+
+    cout << endl << "Expense records: " << endl;
     
-    cout << fixed << setprecision(2);
+    while (outfile >> expensename >> amount) {
+        cout << expensename << ": $" << amount << endl;
+        total += amount;
+    }
+    
+    cout << "Total expenses: $" << total << endl;
+    outfile.close();
     return 0;
 }
