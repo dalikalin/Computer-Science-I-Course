@@ -23,7 +23,7 @@ int main() {
     cout << "Enter your age: ";
     cin >> age;
 
-    cin.ignore(1000, '\n');
+    cin.ignore(1000, '\n'); // remove the leftover Enter newline
 
     cout << "Enter your favourite subject: ";
     getline(cin, sub);
