@@ -16,6 +16,16 @@
 #include <string>
 using namespace std;
 int main () {
-    
+    int numofexpense;
+    string expensename;
+    double amount;
+    cout << "How many expenses do you want to record?";
+    cin >> numofexpense;
+    for (int i = 0; i< numofexpense; i++) {
+        cout << "Enter the expense name: ";
+        cin >> expensename;
+        cout << "Enter the amount: ";
+        cin >> amount;
+    }
     return 0;
 }
