@@ -13,19 +13,34 @@
 // 9. Display an error message if the file cannot be opened.
 #include <iostream>
 #include <fstream>
+#include <iomanip>
 #include <string>
 using namespace std;
 int main () {
     int numofexpense;
     string expensename;
     double amount;
+    double total = 0;
+
     cout << "How many expenses do you want to record?";
     cin >> numofexpense;
+
+    ofstream infile("expenses.txt", ios::app); //append mode is a file-opening and data-handling setting that adds new data to the end of an existing file or dataset without deleting or overwriting its current contents.
     for (int i = 0; i< numofexpense; i++) {
         cout << "Enter the expense name: ";
         cin >> expensename;
-        cout << "Enter the amount: ";
+        cout << "Enter the amount: $ ";
         cin >> amount;
+        infile << expensename << " " << amount << endl;
     }
+
+    infile.close();
+
+    ifstream outfile("expenses.txt");
+    outfile >> expensename;
+    outfile >> expensename;
+    outfile >> expensename;
+    
+    cout << fixed << setprecision(2);
     return 0;
 }
