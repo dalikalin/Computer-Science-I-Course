@@ -9,7 +9,7 @@ int main()
 
     if (age >= 18)
     {
-        cout << "You are an adult.";
+        cout << "You are an adult, lmao.";
     }
     else
     {
