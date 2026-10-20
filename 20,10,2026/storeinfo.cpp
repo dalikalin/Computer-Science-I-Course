@@ -10,7 +10,7 @@ int main () {
 
     cout << "Enter the student name: ";
     getline(cin, name);
-    infile << name << endl;
+    infile << name << " ";
     cout << "Enter the score: ";
     cin >> score;
     infile << score << endl;

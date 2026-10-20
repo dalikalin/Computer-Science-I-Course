@@ -1,4 +1,2 @@
-Lin dalika
-100
-Kun mouyteang
-100
+Lin dalika 100
+Kun mouyteang 100
