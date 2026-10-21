@@ -1,3 +1,4 @@
+//Create an integer array containing six numbers. Display all the numbers, then display only the even numbers.
 #include <iostream>
 using namespace std;
 int main () {
