@@ -8,6 +8,7 @@ int main()
 
     cout << "Enter your hour of work per week: ";
     cin >> hour;
+    
     if (hour < 0)
     {
         cout << "Invalid input" << endl;
