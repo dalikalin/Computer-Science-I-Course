@@ -1,3 +1,4 @@
+//Write a C++ program that stores five students' first names in a string array. Use a loop to call the names from the keyboard and another look to display each name on a separate line.
 #include <iostream>
 #include <string>
 using namespace std;
