@@ -9,8 +9,18 @@ int main () {
     int marks[5] ={90, 91, 92, 93, 94};
 
     cout << "The original marks are: ";
-    for (int i=0; i<=5; i++) {
+    for (int i=0; i<5; i++) {
         cout << marks[i] << " ";
     }
+    
+    int bonus[5] = {5, 4, 3, 2, 1};
+    for (int i=0; i<5; i++) {
+        marks[i] += bonus[i];
+    }
+    cout << endl << "The updated marks are: ";
+    for (int i=0; i<5; i++) {
+        cout << marks[i] << " ";
+    }
+
     return 0;
 }
