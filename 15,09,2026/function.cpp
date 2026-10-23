@@ -13,5 +13,6 @@ int main () {
 
     hypotenuse = sqrt(pow(firstside,2) + pow(secondside,2));
     cout <<"The lengths of the hypotenuse is "<<hypotenuse;
+    
     return 0;
 }
