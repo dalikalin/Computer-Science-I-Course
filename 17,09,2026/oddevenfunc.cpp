@@ -24,5 +24,6 @@ int main() {
     if (result == -1) {
         cout << "This is an odd number.";
     }
+    
     return 0;
 }
