@@ -2,7 +2,6 @@
 using namespace std;
 int main () {
     int num;
-
     do {
         cout << endl <<"Enter a number from 1 to 10: ";
         cin >> num;
