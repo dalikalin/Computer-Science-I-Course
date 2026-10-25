@@ -5,7 +5,6 @@ int main () {
     int count = 1;
     int sumeven = 0;
     int sumodd = 0;
-
     while (count <= 8) {
         cout <<"Enter number "<<count<< " : ";
         cin >>num;
