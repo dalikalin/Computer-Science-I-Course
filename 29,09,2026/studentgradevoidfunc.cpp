@@ -40,7 +40,6 @@ int main () {
 }
 
 // OR we can write like this
-
 #include <iostream>
 using namespace std;
 
