@@ -1,10 +1,12 @@
 #include <iostream>
+#include <cctype>
 using namespace std;
 int main() {
     char grade;
 
     cout << "Enter your grade: ";
     cin >> grade;
+    grade = toupper(grade);
 
     switch (grade) {
         case 'A':
@@ -25,6 +27,8 @@ int main() {
         case 'F':
             cout << "F means Find a new family";
             break;
+        default:
+            cout << "Invalid input";
     }
     return 0;
 }
