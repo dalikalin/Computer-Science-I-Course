@@ -28,6 +28,8 @@ int main() {
     case 7:
         cout << "Today is Sunday.";
         break;
+    default:
+        cout << "Invalid input";
     }
     return 0;
 }
