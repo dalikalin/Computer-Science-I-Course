@@ -2,6 +2,10 @@
 #include <iostream>
 using namespace std;
 int main() {
-    
+    char first[] = "Cat";
+
+    first[0] = 'B';
+
+    cout << first;
     return 0;
 }
