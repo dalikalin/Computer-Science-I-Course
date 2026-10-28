@@ -4,12 +4,14 @@
 using namespace std;
 int main() {
     char word[] = "AvadaKedavra";
-    int sum;
+    int sum = 0;
 
-    for (int i=0; word[i] != '\n'; i++) {
-        sum += i;
+    for (int i=0; word[i] != '\0'; i++) {
+        if (word[i] == 'a' || word[i] == 'A') {
+            sum ++;
+        }
     }
-
+    
     cout << "The word " << word << " has " << sum << "a.";
     return 0;
 }
