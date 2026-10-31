@@ -11,6 +11,7 @@ int main () {
 
     num.push_back(40);
     num.push_back(50);
+    num.push_back(60);
 
     cout << endl << "After push back: ";
     for (int i=0; i < num.size(); i++) {
