@@ -4,4 +4,5 @@ using namespace std;
 int main () {
     vector<int> num = {10, 20, 30};
     cout << num[0];
+    return 0;
 }
