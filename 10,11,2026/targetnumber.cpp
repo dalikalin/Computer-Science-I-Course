@@ -6,12 +6,14 @@ int main () {
     int targetnum = 10;
     
     for (int i=0; i<11; i++) {
-        for (int k=0; k<11; k++) {
-            if (a[k] + a[k+1] == targetnum) {
-                cout << a[k] << a[k+1];
+        for (int k = i + 1; k<11; k++) {
+            if (a[i] + a[k] == targetnum) {
+                cout << "The pair is: "<< a[i] << " and "<< a[k] << endl;
+                cout << "The indices are: " << "[" << i << "]" " and " "[" << k << "]" << endl;
+                return 0; //As soon as a pair is found, the program prints it and ends, so only one pair is displayed
             }
-            cout << a[k] << a[k+1];
-        } 
+        }
     }
+    cout << "Pair not found.";
     return 0;
 }
