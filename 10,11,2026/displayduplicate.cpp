@@ -1,0 +1,1 @@
+//Given an array of integers, determine whether any number appears more than once. Display “Duplicate found” if a repeated number exists; otherwise, display “No duplicates.”
