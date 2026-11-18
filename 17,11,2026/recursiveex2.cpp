@@ -7,6 +7,7 @@ void countup(int n) {
     if (n < 0) {
         return;
     }
+
     countup (n - 1);
 
     cout << n << " ";
@@ -19,5 +20,6 @@ int main () {
     cin >> num;
 
     countup(num);
+    
     return 0;
 }
