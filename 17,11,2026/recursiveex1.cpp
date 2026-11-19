@@ -2,27 +2,27 @@
 #include <iostream>
 using namespace std;
 
-//use normal function
-int countdown (int n) {
-    if (n < 0) {
-        return 0;
-    }
-    cout << n << " ";
+// //use normal function
+// int countdown (int n) {
+//     if (n < 0) {
+//         return 0;
+//     }
+//     cout << n << " ";
 
-    countdown (n-1);
+//     countdown (n-1);
 
-    return n;
-}
+//     return n;
+// }
 
-int main () {
-    int num;
+// int main () {
+//     int num;
 
-    cout << "Enter the number to countdown from: ";
-    cin >> num;
+//     cout << "Enter the number to countdown from: ";
+//     cin >> num;
 
-    countdown(num);
-    return 0;
-}
+//     countdown(num);
+//     return 0;
+// }
 
 //use void function
 void countdownvoid (int n) {
