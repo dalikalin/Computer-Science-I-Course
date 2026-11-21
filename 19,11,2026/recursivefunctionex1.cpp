@@ -1,0 +1,1 @@
+//Write a recursive C++ function named fibonacci(int n) that returns the nth Fibonacci number, where n is a nonnegative integer. The first two Fibonacci numbers are 0 and 1. Each subsequent number is the sum of the previous two numbers.
